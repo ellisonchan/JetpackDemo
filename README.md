@@ -15,7 +15,7 @@ Show how to use CameraX api, such as preview, image capture, video recording.
 
 See at ./app/src/main/java/com/ellison/jetpackdemo/cameraX
 
-![CameraX Demo](https://ftp.bmp.ovh/imgs/2021/01/78cf2ff56a4e71df.jpg)
+![CameraX Demo](https://ftp.bmp.ovh/imgs/2021/01/d3ea7d4deefb8243.jpg)
 
 ## ●　Databinding
 Show databinding use case.
@@ -35,4 +35,4 @@ Todo
 ## ●　StartUp
 Todo
 
-[＞Watch my blog！＜](https://blog.csdn.net/allisonchen)
+[-----＞Watch my blog！＜-----](https://blog.csdn.net/allisonchen)
