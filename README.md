@@ -8,7 +8,7 @@ Demo that used to show how to use Jetpack libraries.
 ## ●　AppCompat
 Show DynamicTint and AutoSize feature with AppCompatTextView and AppCompatImageView.
 
-<img src="https://ftp.bmp.ovh/imgs/2021/01/9456620bd549af63.png" alt="DynamicTint & AutoSize" height="33%" width="33%">
+<img src="https://ftp.bmp.ovh/imgs/2021/01/9456620bd549af63.png" alt="DynamicTint & AutoSize" height="40%" width="40%">
 
 ## ●　CameraX
 Show how to use CameraX api, such as preview, image capture, video recording.
@@ -35,4 +35,5 @@ Todo
 ## ●　StartUp
 Todo
 
-[-----＞ Watch my blog ＜-----](https://blog.csdn.net/allisonchen)
+## ※　Blog
+https://blog.csdn.net/allisonchen
