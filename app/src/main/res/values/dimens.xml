@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="preview_padding">0dp</dimen>
+    <dimen name="icon_capture_size">80dp</dimen>
+    <dimen name="icon_capture_size_center">30dp</dimen>
+    <dimen name="icon_option_size_big">50dp</dimen>
+    <dimen name="icon_option_size">30dp</dimen>
+    <dimen name="icon_option_size_small">40dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_capture_record_pressing_outter"
+        android:width="@dimen/icon_capture_size"
+        android:height="@dimen/icon_capture_size"/>
+
+    <item android:drawable="@drawable/ic_capture_record_pressing_center"
+        android:width="@dimen/icon_capture_size_center"
+        android:height="@dimen/icon_capture_size_center"
+        android:gravity="center"/>
+</layer-list>

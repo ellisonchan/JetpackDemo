@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false">
+
+    <solid android:color="#ed1941"/>
+
+    <corners android:radius="2dp"/>
+
+    <size
+        android:width="@dimen/icon_capture_size_center"
+        android:height="@dimen/icon_capture_size_center"></size>
+
+</shape>

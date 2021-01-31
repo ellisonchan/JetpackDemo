@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+    <data>
+        <import type="android.graphics.Color"/>
+        <variable name="person" type="com.ellison.jetpackdemo.databinding.Person" />
+        <variable name="checkResponder" type="com.ellison.jetpackdemo.databinding.OneWayBindingAdapter.CheckResponder" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/test_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@{person.checked ? Color.BLUE : Color.WHITE}" >
+
+        <TextView
+            android:id="@+id/test_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@{person.name}"
+            android:textSize="30sp"
+            android:textColor="@{person.adult ? person.checked ? Color.WHITE : Color.BLUE : Color.RED}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/test_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:text="@{person.age}"
+            android:textSize="30sp"
+            android:textColor="@{person.adult ? person.checked ? Color.WHITE : Color.BLUE : Color.RED}"
+            app:layout_constraintEnd_toStartOf="@+id/test_check"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Age" />
+
+        <CheckBox
+            android:id="@+id/test_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:textSize="30sp"
+            android:enabled="@{person.adult ? true : false}"
+            android:checked="@{person.checked}"
+            android:onCheckedChanged="@{checkResponder::onCheckChanged}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="check"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

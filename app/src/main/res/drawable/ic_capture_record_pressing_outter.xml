@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+    <stroke android:color="#000000"
+        android:width="1px"></stroke>
+
+    <size
+        android:width="@dimen/icon_capture_size"
+        android:height="@dimen/icon_capture_size"></size>
+
+</shape>

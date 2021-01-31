@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:viewBindingIgnore="true">
+
+    <TextView
+        android:id="@+id/no_tint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/white"
+        android:text="Not Tint background"
+        android:textSize="17sp"
+        android:drawableEnd="@android:drawable/ic_btn_speak_now"
+        android:background="@color/design_default_color_secondary"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Do  Tint background"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:drawableEnd="@android:drawable/ic_btn_speak_now"
+        android:background="@color/design_default_color_secondary"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_tint_tv"
+        app:backgroundTint="@color/design_default_color_secondary_variant"
+        app:drawableTint="@color/white"
+         />
+
+    <TextView
+        android:id="@+id/no_auto_size_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginHorizontal="6dp"
+        android:text="Not auto size text Auto size text Auto size text Auto size text Auto size text"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tint_tv"
+        app:autoSizeTextType="none"
+        />
+
+    <TextView
+        android:id="@+id/auto_size_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginHorizontal="6dp"
+        android:text="Do  auto size text Auto size text Auto size text Auto size text Auto size text"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_auto_size_tv"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="11sp"
+        app:autoSizeMaxTextSize="17sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
