@@ -13,6 +13,8 @@ Show DynamicTint and AutoSize feature with AppCompatTextView and AppCompatImageV
 ## ●　CameraX
 Show how to use CameraX api, such as preview, image capture, video recording.
 
+See at ./app/src/main/java/com/ellison/jetpackdemo/cameraX
+
 ![CameraX Demo](https://ftp.bmp.ovh/imgs/2021/01/78cf2ff56a4e71df.jpg)
 
 ## ●　Databinding
