@@ -69,6 +69,11 @@
             android:theme="@style/Theme.JetpackDemoFullScreen"
             android:exported="false">
         </activity>
+
+        <activity android:name=".room.DemoActivity"
+            android:label="Room"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>
