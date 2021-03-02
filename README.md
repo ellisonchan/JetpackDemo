@@ -1,5 +1,4 @@
-![Jetpack](https://ftp.bmp.ovh/imgs/2021/01/896db983d01188fc.png)
-
+![Jetpack](https://ftp.bmp.ovh/imgs/2021/03/96727cce03a1f57f.jpg)
 > Google site: https://developer.android.google.cn/training/camerax?hl=zh-cn
 
 # JetpackDemo
