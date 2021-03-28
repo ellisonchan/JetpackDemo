@@ -40,10 +40,7 @@ import androidx.camera.core.ImageProxy;
 import androidx.camera.core.Preview;
 import androidx.camera.core.VideoCapture;
 import androidx.camera.core.impl.utils.executor.CameraXExecutors;
-import androidx.camera.extensions.BeautyImageCaptureExtender;
 import androidx.camera.extensions.BeautyPreviewExtender;
-import androidx.camera.extensions.BokehImageCaptureExtender;
-import androidx.camera.extensions.HdrImageCaptureExtender;
 import androidx.camera.extensions.NightImageCaptureExtender;
 import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.camera.view.PreviewView;
@@ -68,7 +65,7 @@ public class DemoActivityLite extends AppCompatActivity {
     private VideoCapture mVideoCapture;
 
     ActivityCameraxLiteBinding binding;
-    private boolean isBack = true, isAnalyzing, isVideoMode, isRecording;
+    private boolean isBack = true, isAnalyzing, isVideoMode, isRecording, isCameraXHandling;
     private int recCount, picCount;
 
     private MultiFormatReader multiFormatReader = new MultiFormatReader();
@@ -370,28 +367,38 @@ public class DemoActivityLite extends AppCompatActivity {
     }
 
     private void recordVideo() {
-        Log.d("Camera", "recordVideo");
+        Log.d("Camera", "recordVideo() isCameraXHandling:" + isCameraXHandling);
+        // Ensure recording is done before recording again cause stopRecording is async.
+        if (isCameraXHandling) return;
+
+        Log.d("Camera", "recordVideo()");
         final ContentValues contentValues = new ContentValues();
         contentValues.put(MediaStore.MediaColumns.DISPLAY_NAME, RECORDED_FILE_NAME
                 + "_" + recCount++);
         contentValues.put(MediaStore.MediaColumns.MIME_TYPE, RECORDED_FILE_NAME_END);
 
-        Log.d("Camera", "startRecording");
+        Log.d("Camera", "recordVideo() startRecording");
         try {
             mVideoCapture.startRecording(
                     new VideoCapture.OutputFileOptions.Builder(getContentResolver(),
                             MediaStore.Video.Media.EXTERNAL_CONTENT_URI, contentValues)
                             .build(),
-                    CameraXExecutors.mainThreadExecutor(),
+                    // CameraXExecutors.mainThreadExecutor(),
+                    CameraXExecutors.ioExecutor(),
                     new VideoCapture.OnVideoSavedCallback() {
                         @Override
                         public void onVideoSaved(@NonNull VideoCapture.OutputFileResults outputFileResults) {
                             Log.d("Camera", "onVideoSaved outputFileResults:"
                                     + outputFileResults.getSavedUri().getPath());
-                            Toast.makeText(DemoActivityLite.this,
+                            CameraXExecutors.mainThreadExecutor().execute(() -> Toast.makeText(DemoActivityLite.this,
                                     "Video got" + (outputFileResults.getSavedUri() != null ?
                                             " @ " + outputFileResults.getSavedUri().getPath(): "")
-                                            + ".", Toast.LENGTH_LONG).show();
+                                            + ".", Toast.LENGTH_LONG).show());
+//                            Toast.makeText(DemoActivityLite.this,
+//                                    "Video got" + (outputFileResults.getSavedUri() != null ?
+//                                            " @ " + outputFileResults.getSavedUri().getPath(): "")
+//                                            + ".", Toast.LENGTH_LONG).show();
+                            videoRecordingPrepared();
                         }
 
                         @Override
@@ -399,6 +406,7 @@ public class DemoActivityLite extends AppCompatActivity {
                                             @Nullable Throwable cause) {
                             Log.d("Camera", "onError videoCaptureError:"
                                     + videoCaptureError + " message:" + message, cause);
+                            videoRecordingPrepared();
                         }
                     }
             );
@@ -406,9 +414,19 @@ public class DemoActivityLite extends AppCompatActivity {
             Log.e("Camera", "Record video error:", e);
         }
         toggleRecordingStatus();
+        isCameraXHandling = true;
+    }
+
+    // Enable record button after recording stopped.
+    private void videoRecordingPrepared() {
+        Log.d("Camera", "videoRecordingPrepared()");
+        isCameraXHandling = false;
+        // Keep disabled status for a while to avoid fast click error with "Muxer stop failed!".
+        binding.capture.postDelayed(() -> binding.capture.setEnabled(true), 500);
     }
 
     private void toggleRecordingStatus() {
+        Log.d("Camera", "toggleRecordingStatus() isVideoMode:" + isVideoMode + " isRecording:" + isRecording);
         if (!isVideoMode) return;
 
         isRecording = !isRecording;
@@ -417,7 +435,10 @@ public class DemoActivityLite extends AppCompatActivity {
 
         // Stop recording when toggle to false.
         if (!isRecording && mVideoCapture != null) {
+            Log.d("Camera", "toggleRecordingStatus() stopRecording");
             mVideoCapture.stopRecording();
+            // Keep record button disabled till video recording truly stopped.
+            binding.capture.post(() -> binding.capture.setEnabled(false));
         }
     }
 
