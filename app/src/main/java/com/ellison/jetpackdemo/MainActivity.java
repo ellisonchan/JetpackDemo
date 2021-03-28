@@ -89,9 +89,12 @@ public class MainActivity extends AppCompatActivity {
         jumpToActivity(com.ellison.jetpackdemo.camera2.DemoActivity.class);
     }
 
-
     public void showRoomDemo(View view) {
         jumpToActivity(com.ellison.jetpackdemo.room.DemoActivity.class);
+    }
+
+    public void showCoroutinesDemo(View view) {
+        jumpToActivity(com.ellison.jetpackdemo.coroutines.DemoActivity.class);
     }
 
     private void jumpToActivity(Class clazz) {

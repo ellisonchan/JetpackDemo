@@ -74,6 +74,11 @@
             android:label="Room"
             android:exported="false">
         </activity>
+
+        <activity android:name=".coroutines.DemoActivity"
+            android:label="Coroutines"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>
