@@ -56,16 +56,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/view_model_show_btn"
                 android:onClick="showDataBindingDemo" />
 
-            <Button
-                android:id="@+id/view_model_binding_show_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="ViewModel Binding"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/data_binding_show_btn"
-                android:onClick="showViewModelBindingDemo" />
+<!--            <Button-->
+<!--                android:id="@+id/view_model_binding_show_btn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="ViewModel Binding"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/data_binding_show_btn"-->
+<!--                android:onClick="showViewModelBindingDemo" />-->
 
             <Button
                 android:id="@+id/lifecycle_show_btn"
@@ -158,6 +158,18 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/app_room_show_btn" />
+
+            <Button
+                android:id="@+id/dagger_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="showDaggerDemo"
+                android:text="Dagger2"
+                android:backgroundTint="@android:color/holo_green_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coroutines_btn" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

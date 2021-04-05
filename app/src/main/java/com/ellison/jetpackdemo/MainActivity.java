@@ -97,6 +97,10 @@ public class MainActivity extends AppCompatActivity {
         jumpToActivity(com.ellison.jetpackdemo.coroutines.DemoActivity.class);
     }
 
+    public void showDaggerDemo(View view) {
+        jumpToActivity(com.ellison.jetpackdemo.dagger2.view.DemoActivity.class);
+    }
+
     private void jumpToActivity(Class clazz) {
         Intent intent = new Intent(this, clazz);
         try {
