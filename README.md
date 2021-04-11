@@ -28,7 +28,7 @@ Demo that used to show how to use [Jetpack](https://developer.android.google.cn/
 
 ## :fork_and_knife: [Hilt](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/hilt)
 
-<img src="https://img.imgdb.cn/item/6072fcc28322e6675ce73f6a.png" alt="Hilt Demo" height="40%" width="40%">
+<img src="https://p26-tt.byteimg.com/origin/pgc-image/581f7e2cf91b4199b0ed5f785b934809" alt="Hilt Demo" height="40%" width="40%">
 
 ## 🔪 [Dagger2](https://github.com/ellisonchan/Dagger2Demo)
 
