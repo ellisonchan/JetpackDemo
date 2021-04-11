@@ -12,6 +12,10 @@ public class PersonModel extends ViewModel {
         Log.d("ViewModel", getClass().getSimpleName() + "#PersonModel()", new Throwable());
     }
 
+    public PersonModel(String v) {
+        Log.d("ViewModel", getClass().getSimpleName() + "#PersonModel()", new Throwable());
+    }
+
     public void getPersonInWork() {
         Log.d("ViewModel", getClass().getSimpleName() + "#getPersonInWork()");
         Person testPerson = new Person(30, "ELC1020");

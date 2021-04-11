@@ -3,26 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <import
+            alias="movie"
+            type="com.ellison.jetpackdemo.hilt.bean.Movie" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/test_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:paddingHorizontal="16dp"
-            android:maxLines="12"
-            android:ellipsize="end"
-            android:text="Dagger2 x Retrofit"
-            android:textSize="31sp"
-            android:textColor="#0E249A"
-            app:layout_constraintBottom_toTopOf="@+id/search"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:text="sdfaedgaeaegesdfaedgaeaegesdfaedgaeaege"/>
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search"
@@ -35,9 +25,19 @@
             app:queryBackground="@android:color/darker_gray"
             app:submitBackground="@android:color/holo_blue_dark"
             app:goIcon="@android:drawable/ic_menu_search"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movie_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search"
+            tools:itemCount="8"
+            tools:listitem="@layout/activity_data_binding_item" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -1,4 +1,4 @@
-package com.ellison.jetpackdemo.dagger2.bean
+package com.ellison.jetpackdemo.hilt.bean
 
 data class MovieResponse<T>(
         var TotalResults: String = "0",

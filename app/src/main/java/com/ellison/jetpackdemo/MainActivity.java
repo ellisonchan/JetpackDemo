@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
         jumpToActivity(com.ellison.jetpackdemo.coroutines.DemoActivity.class);
     }
 
-    public void showDaggerDemo(View view) {
-        jumpToActivity(com.ellison.jetpackdemo.dagger2.view.DemoActivity.class);
+    public void showHiltDemo(View view) {
+        jumpToActivity(com.ellison.jetpackdemo.hilt.DemoActivity.class);
     }
 
     private void jumpToActivity(Class clazz) {

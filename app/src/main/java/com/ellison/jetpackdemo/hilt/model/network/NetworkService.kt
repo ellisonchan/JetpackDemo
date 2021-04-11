@@ -1,11 +1,11 @@
-package com.ellison.jetpackdemo.dagger2.model
+package com.ellison.jetpackdemo.hilt.model.network
 
-import com.ellison.jetpackdemo.dagger2.bean.Movie
-import com.ellison.jetpackdemo.dagger2.bean.MovieResponse
+import com.ellison.jetpackdemo.hilt.bean.Movie
+import com.ellison.jetpackdemo.hilt.bean.MovieResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface MovieService {
+interface NetworkService {
     @GET("http://omdbapi.com/")
     suspend fun requestSearchByCoroutines(
             @Query("s") keywords: String,

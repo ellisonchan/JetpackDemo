@@ -80,8 +80,8 @@
             android:exported="false">
         </activity>
 
-        <activity android:name=".dagger2.view.DemoActivity"
-            android:label="Dagger2"
+        <activity android:name=".hilt.DemoActivity"
+            android:label="Hilt"
             android:exported="false">
         </activity>
     </application>

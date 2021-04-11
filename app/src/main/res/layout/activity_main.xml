@@ -27,6 +27,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/white"
                 android:text="ViewBinding"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -159,14 +161,27 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/app_room_show_btn" />
 
+<!--            <Button-->
+<!--                android:id="@+id/dagger_btn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:onClick="showDaggerDemo"-->
+<!--                android:text="Dagger2"-->
+<!--                android:backgroundTint="@android:color/holo_green_light"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/coroutines_btn" />-->
+
             <Button
-                android:id="@+id/dagger_btn"
+                android:id="@+id/hilt_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:onClick="showDaggerDemo"
-                android:text="Dagger2"
-                android:backgroundTint="@android:color/holo_green_light"
+                android:onClick="showHiltDemo"
+                android:text="Hilt"
+                android:textColor="@color/white"
+                android:backgroundTint="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/coroutines_btn" />

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.graphics.Color"/>
+        <variable name="movie" type="com.ellison.jetpackdemo.hilt.bean.Movie"/>
+        <variable name="responder" type="com.ellison.jetpackdemo.hilt.view.MovieAdapter.EventResponder" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/test_layout"
+        android:layout_marginHorizontal="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@{movie.Title}"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:background="@{(movie.Title.length() > 16) ? Color.BLACK : Color.BLUE}"
+            android:clickable="true"
+            android:onClick="@{responder::onClick}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Name"
+            tools:background="@color/black"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

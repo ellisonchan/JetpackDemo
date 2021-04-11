@@ -6,7 +6,8 @@ Demo that used to show how to use [Jetpack](https://developer.android.google.cn/
 
 | Library       | Index |
 | :--------- | :--: |
-| [Dagger2](https://github.com/google/dagger)     | [Show DI case with **Dagger2** annotation.](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/dagger2) |
+| [Hilt](https://developer.android.google.cn/training/dependency-injection/hilt-jetpack?hl=zh-cn)   | [Show DI case with perfect **Hilt** annotation.](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/hilt) |
+| [Dagger2](https://github.com/google/dagger)     | [Show DI case with **Dagger2** annotation.](https://github.com/ellisonchan/Dagger2Demo) |
 | [Compose](https://developer.android.com/jetpack/compose)     | [Show how to use **Compose** UI library.](https://github.com/ellisonchan/ComposeMovie) |
 | [Room](https://developer.android.google.cn/training/data-storage/room?hl=zh-cn)     |  [Show how to use **Room** API.](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/room) |
 | [CameraX](https://developer.android.google.cn/training/camerax?hl=zh-cn)     |  [Show how to use **CameraX** api, such as preview, image capture and video recording.](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/cameraX)  |
@@ -17,7 +18,6 @@ Demo that used to show how to use [Jetpack](https://developer.android.google.cn/
 | [ViewModel x DataBinding](https://developer.android.google.cn/topic/libraries/architecture/viewmodel)   | [Show how to use **ViewModel** and **DataBinding**.](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/viewModelBinding)  |
 | [Lifecycle](https://developer.android.google.cn/topic/libraries/architecture/lifecycle?hl=zh-cn) |  [Show **Lifecycle** test code.](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/lifecycle)  |
 | [LiveData](https://developer.android.google.cn/topic/libraries/architecture/livedata?hl=zh-cn)   |   [Show **LiveData** test code.](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/liveData)  |
-| [Hilt](https://developer.android.google.cn/training/dependency-injection/hilt-jetpack?hl=zh-cn)   | Todo  |
 | [DataStore](https://developer.android.google.cn/topic/libraries/architecture/datastore?hl=zh_cn)   | Todo  |
 | [SavingStates](https://developer.android.google.cn/topic/libraries/architecture/saving-states?hl=zh-cn)   | Todo  |
 | [StartUp](https://developer.android.google.cn/topic/libraries/app-startup?hl=zh_cn)   | Todo  |
@@ -26,15 +26,19 @@ Demo that used to show how to use [Jetpack](https://developer.android.google.cn/
 | [Navigation](https://developer.android.google.cn/guide/navigation?hl=zh-cn)   | Todo  |
 | [WorkManager](https://developer.android.google.cn/topic/libraries/architecture/workmanager/basics?hl=zh_cn)   | Todo  |
 
-## 🔪 [Dagger2](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/dagger2)
+## :fork_and_knife: [Hilt](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/hilt)
 
-<img src="https://img.imgdb.cn/item/606ae7b78322e6675c9b00fa.png" alt="Room Demo" height="40%" width="40%">
+<img src="https://img.imgdb.cn/item/6072fcc28322e6675ce73f6a.png" alt="Hilt Demo" height="40%" width="40%">
+
+## 🔪 [Dagger2](https://github.com/ellisonchan/Dagger2Demo)
+
+<img src="https://img.imgdb.cn/item/606ae7b78322e6675c9b00fa.png" alt="Dagger2 Demo" height="40%" width="40%">
 
 ## :art:　[Compose](https://github.com/ellisonchan/ComposeMovie)
 
-<img src="https://ftp.bmp.ovh/imgs/2021/03/b7a715cd82b9e431.png" alt="Room Demo" height="40%" width="40%">
+<img src="https://ftp.bmp.ovh/imgs/2021/03/b7a715cd82b9e431.png" alt="Compose Demo" height="40%" width="40%">
 
-<img src="https://ftp.bmp.ovh/imgs/2021/03/fa80378f7871ea03.png" alt="Room Demo" height="40%" width="40%">
+<img src="https://ftp.bmp.ovh/imgs/2021/03/fa80378f7871ea03.png" alt="Compose Demo" height="40%" width="40%">
 
 ## :house:　[Room](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/room)
 
