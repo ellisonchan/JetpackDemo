@@ -1,6 +1,7 @@
 package com.ellison.jetpackdemo.hilt.viewmodel
 
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
 import androidx.hilt.Assisted
 import androidx.hilt.lifecycle.ViewModelInject
@@ -11,19 +12,19 @@ import androidx.lifecycle.ViewModel
 import com.ellison.jetpackdemo.hilt.bean.Movie
 import com.ellison.jetpackdemo.hilt.bean.MovieResponse
 import com.ellison.jetpackdemo.hilt.model.Repository
+import com.ellison.jetpackdemo.hilt.view.MovieAdapter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class MovieViewModel @ViewModelInject constructor(private val repository: Repository,
-                                                  @Assisted private val savedStateHandle: SavedStateHandle,
-                                                  private val demoActivity: FragmentActivity
+                                                  var movieAdapter: MovieAdapter
 ) : ViewModel() {
     private val resultData = MutableLiveData<MovieResponse<List<Movie>>>()
 
-    fun searchMovie(keyWord: String, observer: Observer<MovieResponse<List<Movie>>>) {
+    fun searchMovie(keyWord: String, fragmentActivity: FragmentActivity, observer: Observer<MovieResponse<List<Movie>>>) {
         Log.d("Hilt", "searchMovie() repository:$repository")
-        resultData.observe(demoActivity, observer)
+        resultData.observe(fragmentActivity, observer)
 
         GlobalScope.launch(Dispatchers.Main) {
             Log.d("Hilt", "searchMovie() searchMovieFromNetwork keyWord:$keyWord")

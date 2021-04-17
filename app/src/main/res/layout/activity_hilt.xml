@@ -39,5 +39,15 @@
             app:layout_constraintTop_toBottomOf="@+id/search"
             tools:itemCount="8"
             tools:listitem="@layout/activity_data_binding_item" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/movie_list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="6dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

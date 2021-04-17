@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.ViewDataBinding
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.ellison.jetpackdemo.databinding.ActivityHiltItemBinding
 import com.ellison.jetpackdemo.hilt.bean.Movie
