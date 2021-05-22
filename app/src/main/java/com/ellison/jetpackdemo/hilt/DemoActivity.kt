@@ -2,6 +2,7 @@ package com.ellison.jetpackdemo.hilt
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
@@ -32,7 +33,16 @@ class DemoActivity : BaseActivity() {
                 Log.d("Hilt", "onQueryTextSubmit() got query:$query")
                 movieViewModel.searchMovie(query, this@DemoActivity) { response: MovieResponse<List<Movie>> ->
                     Log.d("Hilt", "onChanged() got response:$response")
-                    bindRecyclerView(response.Search)
+
+                    if (response.Response.toBoolean() && response.Search != null) {
+                        bindRecyclerView(response.Search)
+                    } else {
+                        Toast.makeText(
+                                this@DemoActivity,
+                                "Got no movie",
+                                Toast.LENGTH_SHORT
+                        ).show()
+                    }
                 }
                 return false
             }

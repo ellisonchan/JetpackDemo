@@ -7,6 +7,6 @@ data class MovieResponse<T>(
         var Search: T
 ) {
     override fun toString(): String {
-        return "Result=$TotalResults,\nResponse=$Response,\nError=$Error,\nSearch=$Search)"
+        return "(TotalResults=$TotalResults,\nResponse=$Response,\nError=$Error,\nSearch=$Search)"
     }
 }

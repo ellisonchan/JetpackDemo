@@ -1,8 +1,7 @@
 package com.ellison.jetpackdemo.hilt.model.database
 
-import android.database.Cursor
-import androidx.lifecycle.LiveData
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Insert
 
 import com.ellison.jetpackdemo.hilt.bean.Movie
 
