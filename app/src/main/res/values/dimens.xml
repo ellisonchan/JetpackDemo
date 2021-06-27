@@ -6,4 +6,5 @@
     <dimen name="icon_option_size_big">50dp</dimen>
     <dimen name="icon_option_size">30dp</dimen>
     <dimen name="icon_option_size_small">40dp</dimen>
+    <dimen name="tap_view_size">50dp</dimen>
 </resources>

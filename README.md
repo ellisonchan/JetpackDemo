@@ -6,6 +6,7 @@ Demo that used to show how to use [Jetpack](https://developer.android.google.cn/
 
 | Library       | Index |
 | :--------- | :--: |
+| [NewCameraX](https://developer.android.google.cn/training/camerax?hl=zh-cn)     |  [Show how to scan QRCode by **CameraX** api and Huawei `Scankit` or Google `Zxing` library.](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/cameraX/NewCameraXActivity.kt)  |
 | [Hilt](https://developer.android.google.cn/training/dependency-injection/hilt-jetpack?hl=zh-cn)   | [Show DI case with perfect **Hilt** annotation.](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/hilt) |
 | [Dagger2](https://github.com/google/dagger)     | [Show DI case with **Dagger2** annotation.](https://github.com/ellisonchan/Dagger2Demo) |
 | [Compose](https://developer.android.com/jetpack/compose)     | [Show how to use **Compose** UI library.](https://github.com/ellisonchan/ComposeMovie) |
@@ -25,6 +26,21 @@ Demo that used to show how to use [Jetpack](https://developer.android.google.cn/
 | [ActivityResult](https://developer.android.google.cn/reference/androidx/activity/result/ActivityResult?hl=zh-cn)   | Todo  |
 | [Navigation](https://developer.android.google.cn/guide/navigation?hl=zh-cn)   | Todo  |
 | [WorkManager](https://developer.android.google.cn/topic/libraries/architecture/workmanager/basics?hl=zh_cn)   | Todo  |
+
+## :camera_flash:　[NewCameraX](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/cameraX/NewCameraXActivity.kt)
+<div align=center><img src="https://z3.ax1x.com/2021/06/27/RJNZaq.png" alt="12-widget" height="40%" width="40%"></div>
+
+### Select analysis service
+![](https://z3.ax1x.com/2021/06/27/RJNuGT.png)
+
+### Scan QRCode by Huawei ScanKit
+![](https://z3.ax1x.com/2021/06/27/RJNhQg.gif)
+
+### Auto zoom when long distance
+![](https://z3.ax1x.com/2021/06/27/RJUiY6.gif)
+
+### Show point view when scan succeed
+![](https://z3.ax1x.com/2021/06/27/RJUV6e.gif)
 
 ## :fork_and_knife: [Hilt](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/hilt)
 
@@ -46,7 +62,8 @@ Demo that used to show how to use [Jetpack](https://developer.android.google.cn/
 
 ## :camera_flash:　[CameraX](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/cameraX)
 
-![CameraX Demo](https://ftp.bmp.ovh/imgs/2021/01/d3ea7d4deefb8243.jpg) 
+<div align=center><img src="https://ftp.bmp.ovh/imgs/2021/01/d3ea7d4deefb8243.jpg" alt="12-widget"></div>
+
 
 ## :wrench:　[AppCompat](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/appCompat)
 
@@ -54,3 +71,28 @@ Demo that used to show how to use [Jetpack](https://developer.android.google.cn/
 
 ## :orange_book:　My blog
 <https://blog.csdn.net/allisonchen>
+
+## license
+```
+MIT License
+
+Copyright (c) 2021 Ellison Chan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```

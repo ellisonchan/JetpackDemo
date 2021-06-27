@@ -9,8 +9,8 @@
     <gradient
         android:gradientRadius="4dp"
         android:angle="180"
-        android:startColor="#ed1941"
-        android:endColor="#c77eb5"/>
+        android:startColor="@color/record_press"
+        android:endColor="@color/record_press"/>
     <size
         android:width="@dimen/icon_capture_size"
         android:height="@dimen/icon_capture_size"></size>

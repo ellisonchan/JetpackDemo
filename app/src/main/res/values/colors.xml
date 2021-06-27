@@ -8,5 +8,36 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="option_icon_tint">#FFFFFFFF</color>
+    <!--    <color name="option_icon_tint">@color/ubuntu_red</color>-->
 
+    <!--    d3d7d4-->
+    <color name="capture_normal">#9F2C162B</color>
+    <color name="capture_normal_end">#9F390239</color>
+    <!--    999d9c-->
+    <color name="capture_press">@color/ubuntu_purple</color>
+
+    <color name="record_normal">@color/ubuntu_orange</color>
+    <!--    ed1941-->
+    <color name="record_press">@color/ubuntu_red</color>
+
+    <!--    8f00BCD4-->
+    <color name="analysis_dialog_bg">#DF9C2239</color>
+    <color name="analysis_dialog_bg_end">#DF390239</color>
+    <color name="focus_tap_color">@color/ubuntu_fuchsia</color>
+    <!--    1f00BCD4-->
+    <color name="scan_zone_color">#5f660F5E</color>
+    <!--    accent_material_light-->
+    <color name="scan_point_color">@color/ubuntu_orange</color>
+    <!--    accent_material_light-->
+    <color name="scan_rect_color">@color/ubuntu_orange</color>
+    <color name="camera_switch_bg">#3fd3d7d4</color>
+    <color name="top_bar_bg">#9F000000</color>
+
+    <!-- ubuntu style -->
+    <color name="ubuntu_orange">#A52732</color>
+    <color name="ubuntu_red">#9C2239</color>
+    <color name="ubuntu_fuchsia">#660F5E</color>
+    <color name="ubuntu_purple">#390239</color>
+    <color name="ubuntu_dark_purple">#2C162B</color>
+    <color name="ubuntu_very_purple">#231522</color>
 </resources>

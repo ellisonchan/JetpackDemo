@@ -82,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showCameraXCompatDemo(View view) {
-        jumpToActivity(com.ellison.jetpackdemo.cameraX.DemoActivityLite.class);
+        // jumpToActivity(com.ellison.jetpackdemo.cameraX.DemoActivityLite.class);
+        jumpToActivity(com.ellison.jetpackdemo.cameraX.NewCameraXActivity.class);
     }
 
     public void showCamera2CompatDemo(View view) {

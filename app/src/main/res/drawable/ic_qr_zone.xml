@@ -8,10 +8,10 @@
         android:width="3dp"></stroke>
     <corners android:bottomRightRadius="6dp"
         android:topLeftRadius="6dp"/>
-    <solid android:color="#34d3d7d4"/>
+    <solid android:color="@color/scan_zone_color"/>
     <size
-        android:width="180dp"
-        android:height="180dp"></size>
+        android:width="250dp"
+        android:height="250dp"></size>
     <padding
         android:bottom="1dp"
         android:left="2dp"

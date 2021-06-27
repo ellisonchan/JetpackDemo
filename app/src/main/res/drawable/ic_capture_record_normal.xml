@@ -15,8 +15,8 @@
     <gradient
         android:gradientRadius="4dp"
         android:angle="180"
-        android:startColor="#ed1941"
-        android:endColor="#ed1941"/>
+        android:startColor="@color/record_normal"
+        android:endColor="@color/record_normal"/>
     <size
         android:width="@dimen/icon_capture_size"
         android:height="@dimen/icon_capture_size"></size>

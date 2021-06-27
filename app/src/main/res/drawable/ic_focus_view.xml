@@ -4,13 +4,13 @@
     android:shape="rectangle"
     android:useLevel="false">
 <!--    <solid android:color="@color/accent_material_light"></solid>-->
-    <stroke android:color="@color/white"
+    <stroke android:color="@color/focus_tap_color"
         android:width="2dp"></stroke>
     <corners android:bottomRightRadius="6dp"
         android:topLeftRadius="6dp"/>
     <size
-        android:width="50dp"
-        android:height="50dp"></size>
+        android:width="@dimen/tap_view_size"
+        android:height="@dimen/tap_view_size"></size>
     <padding
         android:bottom="1dp"
         android:left="2dp"

@@ -4,13 +4,13 @@
     android:shape="oval"
     android:useLevel="false">
     <stroke android:color="#d3d7d4"
-        android:width="1px"></stroke>
+        android:width="3dp"></stroke>
 
     <gradient
         android:gradientRadius="4dp"
         android:angle="180"
-        android:startColor="#d3d7d4"
-        android:endColor="#fffef9"/>
+        android:startColor="@color/capture_normal"
+        android:endColor="@color/capture_normal_end"/>
     <size
         android:width="@dimen/icon_capture_size"
         android:height="@dimen/icon_capture_size"></size>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false">
+
+    <corners
+        android:topLeftRadius="8dp"
+        android:topRightRadius="8dp" />
+
+    <size
+        android:width="23dp"
+        android:height="23dp"></size>
+
+    <gradient
+        android:gradientRadius="4dp"
+        android:angle="180"
+        android:startColor="@color/analysis_dialog_bg"
+        android:endColor="@color/analysis_dialog_bg_end"/>
+
+</shape>

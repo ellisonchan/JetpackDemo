@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+    <solid android:color="@color/scan_point_color"></solid>
+    <stroke android:color="@android:color/white"
+        android:width="1dp"></stroke>
+    <size
+        android:width="23dp"
+        android:height="23dp"></size>
+
+</shape>
