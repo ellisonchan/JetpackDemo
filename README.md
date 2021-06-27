@@ -28,7 +28,7 @@ Demo that used to show how to use [Jetpack](https://developer.android.google.cn/
 | [WorkManager](https://developer.android.google.cn/topic/libraries/architecture/workmanager/basics?hl=zh_cn)   | Todo  |
 
 ## :camera_flash:　[NewCameraX](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/cameraX/NewCameraXActivity.kt)
-<div align=center><img src="https://z3.ax1x.com/2021/06/27/RJNZaq.png" alt="12-widget" height="40%" width="40%"></div>
+<img src="https://z3.ax1x.com/2021/06/27/RJNZaq.png" alt="12-widget" height="40%" width="40%"></div>
 
 ### Select analysis service
 ![](https://z3.ax1x.com/2021/06/27/RJNuGT.png)
@@ -62,7 +62,7 @@ Demo that used to show how to use [Jetpack](https://developer.android.google.cn/
 
 ## :camera_flash:　[CameraX](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/cameraX)
 
-<div align=center><img src="https://ftp.bmp.ovh/imgs/2021/01/d3ea7d4deefb8243.jpg" alt="12-widget"></div>
+<img src="https://ftp.bmp.ovh/imgs/2021/01/d3ea7d4deefb8243.jpg" alt="12-widget"></div>
 
 
 ## :wrench:　[AppCompat](https://github.com/ellisonchan/JetpackDemo/tree/main/app/src/main/java/com/ellison/jetpackdemo/appCompat)
